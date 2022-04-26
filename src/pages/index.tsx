@@ -1,12 +1,15 @@
 import * as React from "react";
+import MainLayout from "../components/main_layout";
 
 const heading = "Python | Machine Learning\nFull Stack Web | Mobile";
 
 function IndexPage() {
     return (
-        <div>
-            <p>{heading}</p>
-        </div>
+        <MainLayout>
+            <div>
+                <p>{heading}</p>
+            </div>
+        </MainLayout>
     );
 }
 
