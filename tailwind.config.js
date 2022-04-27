@@ -5,7 +5,14 @@ module.exports = {
             body: ["Montserrat", "sans-serif"],
             heading: ["Lato", "sans-serif"],
         },
-        extend: {},
+        extend: {
+            colors: {
+                "black-transparent": "#00000080",
+            },
+            backgroundImage: {
+                "index-bg": "url(/index_bg.png)",
+            },
+        },
     },
     plugins: [],
 };
