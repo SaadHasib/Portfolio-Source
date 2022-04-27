@@ -11,15 +11,26 @@ function IndexPage() {
     return (
         <MainLayout>
             {/* Heading section container */}
-            <div className="w-full h-[512px] bg-red-500 flex items-center bg-index-bg">
+            <div
+                className="w-full flex items-center bg-index-bg \
+                    h-[250px] md:h-[350px] lg:h-[512px]"
+            >
                 {/* HEading text container */}
-                <div className="font-heading font-bold text-8xl px-12 py-5 align-centre bg-black-transparent">
+                <div
+                    className="font-heading font-bold \
+                        text-4xl md:text-6xl lg:text-8xl \
+                        px-12 py-5 align-centre bg-black-transparent"
+                >
                     <p>{heading1}</p>
                     <p>{heading2}</p>
                 </div>
             </div>
             {/* About container */}
-            <div className="font-body text-3xl ml-12 mt-12">
+            <div
+                className="font-body \
+                    text-lg md:text-xl lg:text-3xl \
+                    mx-12 mt-12"
+            >
                 <p>{about1}</p>
                 <br></br>
                 <p>{about2}</p>
