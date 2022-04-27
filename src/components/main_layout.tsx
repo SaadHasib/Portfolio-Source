@@ -3,7 +3,9 @@ import * as React from "react";
 
 function MainLayout(props: any) {
     return (
+        // Container
         <div className="h-screen bg-black">
+            {/* Navigation links */}
             <nav
                 className="flex gap-x-16 w-full h-16 bg-black text-white text-xl text-center border-b-2 \
             border-b-white font-body font-bold"
@@ -41,6 +43,7 @@ function MainLayout(props: any) {
                     </div>
                 </Link>
             </nav>
+            {/* Page component */}
             <div className="text-white">{props.children}</div>
         </div>
     );
