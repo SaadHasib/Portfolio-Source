@@ -10,28 +10,30 @@ const about2 = "Also a hobbyist 2D/3D graphic designer.";
 function IndexPage() {
     return (
         <MainLayout>
-            {/* Heading section container */}
-            <div
-                className="w-full flex items-center bg-index-bg
-                    h-[250px] md:h-[350px] lg:h-[512px]"
-            >
-                {/* HEading text container */}
+            <div>
+                {/* Heading section container */}
                 <div
-                    className="font-heading font-bold px-12 py-5 align-centre bg-black-transparent
-                        text-4xl md:text-6xl lg:text-8xl"
+                    className="w-full flex items-center bg-index-bg
+                    h-[250px] md:h-[350px] lg:h-[512px]"
                 >
-                    <p>{heading1}</p>
-                    <p>{heading2}</p>
+                    {/* HEading text container */}
+                    <div
+                        className="font-heading font-bold px-12 py-5 align-centre bg-black-transparent
+                        text-4xl md:text-6xl lg:text-8xl"
+                    >
+                        <p>{heading1}</p>
+                        <p>{heading2}</p>
+                    </div>
                 </div>
-            </div>
-            {/* About container */}
-            <div
-                className="font-body mx-12 mt-12
+                {/* About container */}
+                <div
+                    className="font-body mx-12 mt-12
                     text-lg md:text-xl lg:text-3xl"
-            >
-                <p>{about1}</p>
-                <br></br>
-                <p>{about2}</p>
+                >
+                    <p>{about1}</p>
+                    <br></br>
+                    <p>{about2}</p>
+                </div>
             </div>
         </MainLayout>
     );
