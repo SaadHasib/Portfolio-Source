@@ -2,7 +2,7 @@ import * as React from "react";
 import NavBar from "./navbar";
 
 type MainLayoutProps = {
-    children: JSX.Element;
+    children: React.ReactNode;
 };
 
 function MainLayout(props: MainLayoutProps) {
