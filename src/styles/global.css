@@ -1,5 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+.menu_line{
+    fill:none;
+    stroke:#ffffff;
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-opacity:1
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@500;700&display=swap');
