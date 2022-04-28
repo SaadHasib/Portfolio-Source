@@ -7,9 +7,21 @@ const headerText =
 function ExperimentsHome() {
     return (
         <MainLayout>
-            <div>
-                <p>{headerText}</p>
+            {/* Heading section container */}
+            <div
+                className="w-full flex items-center bg-index-bg
+                    h-[250px] md:h-[350px] lg:h-[512px]"
+            >
+                {/* Heading text container */}
+                <div
+                    className="font-body font-normal px-12 py-5 align-centre bg-black-transparent
+                        text-xl md:text-2xl lg:text-4xl"
+                >
+                    <p>{headerText}</p>
+                </div>
             </div>
+            {/* Experiments cards section container */}
+            <div></div>
         </MainLayout>
     );
 }
