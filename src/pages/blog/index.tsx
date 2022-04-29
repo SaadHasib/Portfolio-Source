@@ -1,10 +1,25 @@
 import * as React from "react";
+import { graphql, Link } from "gatsby";
 import MainLayout from "../../components/main_layout";
+
+type blogIdxProps = {
+    data: {
+        allMarkdownRemark: {
+            nodes: {
+                frontmatter: {
+                    title: string;
+                    slug: string;
+                };
+                id: string;
+            }[];
+        };
+    };
+};
 
 const headerText =
     "In this blog I share some of the knowledge, which I gathered, while learning new technologies.";
 
-function BlogHome() {
+function BlogHome(props: blogIdxProps) {
     return (
         <MainLayout>
             {/* Heading section container */}
@@ -21,9 +36,29 @@ function BlogHome() {
                 </div>
             </div>
             {/* Blog cards section container */}
-            <div></div>
+            <div>
+                {props.data.allMarkdownRemark.nodes.map((node: any) => (
+                    <Link key={node.id} to={`/blog/${node.frontmatter.slug}`}>
+                        {node.frontmatter.title}
+                    </Link>
+                ))}
+            </div>
         </MainLayout>
     );
 }
+
+export const query = graphql`
+    query MyQuery {
+        allMarkdownRemark {
+            nodes {
+                frontmatter {
+                    title
+                    slug
+                }
+                id
+            }
+        }
+    }
+`;
 
 export default BlogHome;
