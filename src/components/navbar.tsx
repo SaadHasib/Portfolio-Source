@@ -107,7 +107,7 @@ function NavBar() {
                         w-[75px] md:w-[120px] lg:w-[150px]
                         px-3 md:px-0
                         my-2 md:my-0
-                        md:hover:h-[33px] lg:hover:h-[38px]
+                        md:hover:h-[33px] lg:hover:h-[35px]
                         md:hover:text-xl lg:hover:text-2xl"
                     >
                         Home
@@ -127,7 +127,7 @@ function NavBar() {
                         w-[75px] md:w-[120px] lg:w-[150px]
                         px-3 md:px-0
                         my-2 md:my-0
-                        md:hover:h-[33px] lg:hover:h-[38px]
+                        md:hover:h-[33px] lg:hover:h-[35px]
                         md:hover:text-xl lg:hover:text-2xl"
                     >
                         Blog
@@ -147,7 +147,7 @@ function NavBar() {
                         w-[75px] md:w-[120px] lg:w-[150px]
                         px-3 md:px-0
                         my-2 md:my-0
-                        md:hover:h-[33px] lg:hover:h-[38px]
+                        md:hover:h-[33px] lg:hover:h-[35px]
                         md:hover:text-xl lg:hover:text-2xl"
                     >
                         Experiments
@@ -168,7 +168,7 @@ function NavBar() {
                         w-[75px] md:w-[120px] lg:w-[150px]
                         px-3 md:px-0
                         my-2 md:my-0
-                        md:hover:h-[33px] lg:hover:h-[38px]
+                        md:hover:h-[33px] lg:hover:h-[35px]
                         md:hover:text-xl lg:hover:text-2xl"
                     >
                         Portfolio
