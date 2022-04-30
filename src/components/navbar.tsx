@@ -27,7 +27,8 @@ function NavBar() {
                 version="1.1"
                 id="menu_ico"
                 xmlns="http://www.w3.org/2000/svg"
-                className="block md:hidden"
+                className="block md:hidden
+                    absolute top-0 md:relative"
                 onClick={showNav}
             >
                 <defs id="defs2" />
