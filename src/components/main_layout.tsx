@@ -8,7 +8,7 @@ type MainLayoutProps = {
 function MainLayout(props: MainLayoutProps) {
     return (
         // Container
-        <div className="h-screen bg-black">
+        <div className="h-screen bg-pat2-bg bg-repeat">
             <NavBar />
             {/* Page component */}
             <div className="text-white">{props.children}</div>
