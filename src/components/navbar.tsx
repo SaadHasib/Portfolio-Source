@@ -97,6 +97,7 @@ function NavBar() {
                     className="inline-block mt-3
                         ml-3 md:ml-9"
                     to="/"
+                    activeClassName="text-green-500"
                 >
                     <div
                         className="transition-all duration-200
@@ -117,6 +118,7 @@ function NavBar() {
                     className="inline-block mt-3
                         ml-3 md:ml-auto"
                     to="/blog"
+                    activeClassName="text-blue-500"
                 >
                     <div
                         className="transition-all duration-200
@@ -137,6 +139,7 @@ function NavBar() {
                     className="inline-block mt-3
                         ml-3 md:ml-0"
                     to="/experiments"
+                    activeClassName="text-blue-500"
                 >
                     <div
                         className="transition-all duration-200
@@ -158,6 +161,7 @@ function NavBar() {
                         ml-3 md:ml-0
                         mr-0 md:mr-9"
                     to="/portfolio"
+                    activeClassName="text-blue-500"
                 >
                     <div
                         className="transition-all duration-200
