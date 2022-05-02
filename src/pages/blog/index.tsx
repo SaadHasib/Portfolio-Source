@@ -1,5 +1,6 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
+import { Helmet } from "react-helmet";
 import MainLayout from "../../components/main_layout";
 
 type blogIdxProps = {
@@ -24,6 +25,9 @@ const headerText =
 function BlogHome(props: blogIdxProps) {
     return (
         <MainLayout>
+            <Helmet>
+                <title>Saad Hasib | Blog</title>
+            </Helmet>
             {/* Heading section container */}
             <div
                 className="w-full flex items-center bg-index-bg

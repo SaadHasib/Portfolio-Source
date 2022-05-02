@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import MainLayout from "../components/main_layout";
 
 const headerText =
@@ -7,6 +8,9 @@ const headerText =
 function PortfolioPage() {
     return (
         <MainLayout>
+            <Helmet>
+                <title>Saad Hasib | Portfolio</title>
+            </Helmet>
             {/* Heading section container */}
             <div
                 className="w-full flex items-center bg-index-bg

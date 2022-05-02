@@ -4,7 +4,7 @@ module.exports = {
         siteUrl: `https://saadhasib.github.io`,
     },
     plugins: [
-        "gatsby-plugin-typescript",
+        `gatsby-plugin-react-helmet`,
         "gatsby-plugin-postcss",
         {
             resolve: `gatsby-source-filesystem`,

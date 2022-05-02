@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import MainLayout from "../components/main_layout";
 
 const heading1 = "Python | Machine Learning";
@@ -10,6 +11,9 @@ const about2 = "Also a hobbyist 2D/3D graphic designer.";
 function IndexPage() {
     return (
         <MainLayout>
+            <Helmet>
+                <title>Saad Hasib</title>
+            </Helmet>
             {/* Heading section container */}
             <div
                 className="w-full flex items-center bg-index-bg
