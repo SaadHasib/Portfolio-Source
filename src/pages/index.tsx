@@ -26,8 +26,11 @@ function IndexPage() {
             </div>
             {/* About container */}
             <div
-                className="font-body font-medium mx-12 mt-12
-                    text-lg md:text-xl lg:text-3xl"
+                className="font-body font-medium px-12
+                    my-12
+                    py-6
+                    text-lg md:text-xl lg:text-3xl
+                    bg-black-transparent"
             >
                 <p>{about1}</p>
                 <br></br>
