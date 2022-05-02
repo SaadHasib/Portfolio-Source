@@ -14,7 +14,7 @@ function ExperimentsHome() {
             >
                 {/* Heading text container */}
                 <div
-                    className="font-body font-normal px-12 py-5 align-centre bg-black-transparent
+                    className="font-body font-medium px-12 py-5 align-centre bg-black-transparent
                         text-xl md:text-2xl lg:text-4xl"
                 >
                     <p>{headerText}</p>
