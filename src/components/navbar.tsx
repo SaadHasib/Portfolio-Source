@@ -58,7 +58,7 @@ function NavBar() {
             <nav
                 className={`gap-x-16 bg-black text-white font-body w-full
                     border-b-0 md:border-b-2 md:border-b-white
-                    absolute top-0 md:relative
+                    absolute top-0 z-50 md:relative
                     pt-2 md:pt-0
                     flex-col md:flex-row
                     text-base md:text-lg lg:text-xl
