@@ -13,6 +13,18 @@ module.exports = {
                 path: `${__dirname}/user_data/posts/`,
             },
         },
-        `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-katex`,
+                        options: {
+                            strict: `ignore`,
+                        },
+                    },
+                ],
+            },
+        },
     ],
 };
