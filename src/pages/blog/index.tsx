@@ -102,7 +102,7 @@ function BlogHome(props: blogIdxProps) {
 }
 
 export const query = graphql`
-    query MyQuery {
+    query BlogIdx {
         allMarkdownRemark {
             nodes {
                 frontmatter {
