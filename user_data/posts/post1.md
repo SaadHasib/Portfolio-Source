@@ -8,3 +8,5 @@ tags: tag1, tag2, tag3
 ## Test Post title
 
 This is a test paragraph
+
+$$\frac{x}{y}$$
