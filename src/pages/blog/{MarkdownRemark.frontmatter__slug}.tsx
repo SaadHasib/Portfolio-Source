@@ -25,7 +25,8 @@ function BlogPost(props: any) {
                     dangerouslySetInnerHTML={{
                         __html: props.data.markdownRemark.html,
                     }}
-                    className="font-body font-normal
+                    className=" post-body
+                    font-body font-normal
                     text-base md:text-lg
                     px-3 md:px-10"
                 ></div>
