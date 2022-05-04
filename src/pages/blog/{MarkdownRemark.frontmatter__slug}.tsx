@@ -2,6 +2,8 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import MainLayout from "../../components/main_layout";
 require(`katex/dist/katex.min.css`);
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
 
 function BlogPost(props: any) {
     return (

@@ -23,6 +23,14 @@ module.exports = {
                             strict: `ignore`,
                         },
                     },
+                    {
+                        resolve: `gatsby-remark-highlight-code`,
+                        options: {
+                            terminal: "carbon",
+                            theme: "vscode",
+                            lineNumbers: true,
+                        },
+                    },
                 ],
             },
         },
