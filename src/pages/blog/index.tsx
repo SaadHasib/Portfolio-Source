@@ -55,7 +55,7 @@ function BlogHome(props: blogIdxProps) {
                 {props.data.allMarkdownRemark.nodes.map((node: any) => (
                     <div
                         className="bg-black rounded-2xl
-                            shadow-zinc-800 md:shadow-zinc-800
+                            shadow-zinc-900 md:shadow-zinc-900
                             shadow-md md:shadow-lg
                             w-[300px] md:w-[350px] lg:w-[450px]
                             min-h-[250px] md:min-h-[350px] lg:min-h-[400px]
