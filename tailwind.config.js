@@ -6,9 +6,6 @@ module.exports = {
             heading: ["Lato", "sans-serif"],
         },
         extend: {
-            colors: {
-                "black-transparent": "#00000080",
-            },
             backgroundImage: {
                 "index-bg": "url(/index_bg.png)",
                 "pat1-bg": "url(/pattern1.png)",

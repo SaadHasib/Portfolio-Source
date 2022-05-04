@@ -21,7 +21,7 @@ function IndexPage() {
             >
                 {/* Heading text container */}
                 <div
-                    className="font-heading font-bold px-12 py-5 align-centre bg-black-transparent
+                    className="font-heading font-bold px-12 py-5 align-centre bg-black/50
                         text-4xl md:text-6xl lg:text-8xl"
                 >
                     <p>{heading1}</p>
