@@ -43,56 +43,69 @@ function BlogHome(props: blogIdxProps) {
             </div>
             {/* Blog cards section container */}
             <div
-                className="flex flex-wrap
-                    justify-center
+                className="flex flex-col
+                    items-center
                     font-body
-                    py-5 md:py-10
-                    px-5 md:px-10 lg:px-32
-                    gap-y-5 md:gap-y-10
-                    gap-x-3 md:gap-x-10 lg:gap-x-28"
+                    w-full
+                    py-5
+                    gap-y-5 md:gap-y-6 lg:gap-y-8"
             >
                 {/* Blog card */}
                 {props.data.allMarkdownRemark.nodes.map((node: any) => (
                     <div
-                        className="bg-black rounded-2xl
+                        className="bg-black
                             shadow-zinc-900 md:shadow-zinc-900
+                            flex flex-col md:flex-row
                             shadow-md md:shadow-lg
-                            w-[300px] md:w-[350px] lg:w-[450px]
+                            w-11/12 lg:w-8/12
                             min-h-[250px] md:min-h-[350px] lg:min-h-[400px]
-                            flex flex-col
                             "
                     >
-                        <Link
-                            key={node.id}
-                            to={`/blog/${node.frontmatter.slug}`}
-                            className="block font-bold
+                        {/* Image */}
+                        <img
+                            src="/post_thumb1.png"
+                            className="h-[100px] w-auto object-cover
+                                md:h-[350px] md:w-auto
+                                lg:h-[400px] lg:w-auto"
+                        ></img>
+                        {/* Text container */}
+                        <div
+                            className="flex flex-col
+                                items-centre
+                                w-full"
+                        >
+                            <Link
+                                key={node.id}
+                                to={`/blog/${node.frontmatter.slug}`}
+                                className="block font-bold
                                 border-b-2 border-white
+                                w-full
                                 text-lg md:text-xl
-                                mx-2 md:mx-3
-                                px-0 md:px-1
+                                px-2 md:px-3
                                 pt-3 md:pt-5
                                 pb-2 md:pb-3
                                 transition-all duration-200
                                 md:hover:text-blue-500"
-                        >
-                            {node.frontmatter.title}
-                        </Link>
-                        <div
-                            className="font-normal
+                            >
+                                {node.frontmatter.title}
+                            </Link>
+                            <div
+                                className="font-normal
                                 text-md md:text-lg
                                 px-2 md:px-3
                                 pt-3 md:pt-5
                                 pb-2 md:pb-3"
-                        >
-                            {node.frontmatter.excerpt}
-                        </div>
-                        <div
-                            className="font-normal text-zinc-400
+                            >
+                                {node.frontmatter.excerpt}
+                            </div>
+                            <div
+                                className="font-normal text-zinc-400
                                 text-sm md:text-base
                                 px-5 pt-2 pb-4
                                 mt-auto"
-                        >
-                            {node.frontmatter.tags}
+                            >
+                                {node.frontmatter.tags}
+                            </div>
                         </div>
                     </div>
                 ))}
