@@ -1,5 +1,6 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import { Helmet } from "react-helmet";
 import MainLayout from "../../components/main_layout";
 
@@ -58,20 +59,22 @@ function BlogHome(props: blogIdxProps) {
                             flex flex-col md:flex-row
                             shadow-md md:shadow-lg
                             w-11/12 lg:w-8/12
-                            min-h-[250px] md:min-h-[350px] lg:min-h-[400px]
+                            min-h-[300px] lg:min-h-[400px]
                             "
                     >
                         {/* Image */}
-                        <img
-                            src="/post_thumb1.png"
-                            className="h-[100px] w-auto object-cover
-                                md:h-[350px] md:w-auto
-                                lg:h-[400px] lg:w-auto"
-                        ></img>
+                        <StaticImage
+                            src="../../../static/post_thumb1.png"
+                            alt="post thumbnail"
+                            className="shrink-0 
+                                w-auto h-[100px] object-cover
+                                md:w-[300px] md:h-auto
+                                lg:w-[400px] lg:h-auto"
+                        ></StaticImage>
                         {/* Text container */}
                         <div
                             className="flex flex-col
-                                items-centre
+                                items-centre grow
                                 w-full"
                         >
                             <Link
@@ -94,7 +97,8 @@ function BlogHome(props: blogIdxProps) {
                                 text-md md:text-lg
                                 px-2 md:px-3
                                 pt-3 md:pt-5
-                                pb-2 md:pb-3"
+                                pb-2 md:pb-3
+                                "
                             >
                                 {node.frontmatter.excerpt}
                             </div>
