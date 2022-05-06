@@ -137,27 +137,6 @@ function NavBar() {
                 </Link>
                 <Link
                     className="inline-block mt-3
-                        ml-3 md:ml-0"
-                    to="/experiments"
-                    activeClassName="text-blue-500"
-                >
-                    <div
-                        className="transition-all duration-200
-                        md:hover:text-blue-500
-                        border-l-4 md:border-b-4 md:border-l-0
-                        border-l-blue-500 md:border-b-blue-500
-                        h-[25px] md:h-[28px] lg:h-[31px]
-                        w-[75px] md:w-[120px] lg:w-[150px]
-                        px-3 md:px-0
-                        my-2 md:my-0
-                        md:hover:h-[33px] lg:hover:h-[35px]
-                        md:hover:text-xl lg:hover:text-2xl"
-                    >
-                        Experiments
-                    </div>
-                </Link>
-                <Link
-                    className="inline-block mt-3
                         ml-3 md:ml-0
                         mr-0 md:mr-9"
                     to="/portfolio"
