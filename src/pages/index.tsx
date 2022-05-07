@@ -34,7 +34,7 @@ function IndexPage() {
                     my-12
                     py-6
                     text-lg md:text-xl lg:text-3xl
-                    bg-black-transparent"
+                    bg-black/50"
             >
                 <p>{about1}</p>
                 <br></br>
