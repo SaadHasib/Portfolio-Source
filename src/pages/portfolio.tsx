@@ -13,7 +13,7 @@ function PortfolioPage() {
             </Helmet>
             {/* Heading section container */}
             <div
-                className="w-full flex items-center bg-index-bg
+                className="w-full flex items-center bg-index-bg md:bg-cover
                     h-[250px] md:h-[350px] lg:h-[512px]"
             >
                 {/* Heading text container */}
