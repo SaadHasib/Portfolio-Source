@@ -41,12 +41,14 @@ function BlogHome(props: blogIdxProps) {
             </Helmet>
             {/* Heading section container */}
             <div
-                className="w-full flex items-center bg-index-bg md:bg-cover
+                className="w-full flex items-center
+                    bg-index-bg md:bg-cover
                     h-[250px] md:h-[350px] lg:h-[512px]"
             >
                 {/* Heading text container */}
                 <div
-                    className="font-body font-medium px-12 py-5 align-centre bg-black/50
+                    className="font-body font-medium px-12 py-5 align-centre
+                        backdrop-blur-3xl drop-shadow-lg bg-black/30
                         text-xl md:text-2xl lg:text-4xl"
                 >
                     <p>{headerText}</p>

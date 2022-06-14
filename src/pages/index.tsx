@@ -16,13 +16,15 @@ function IndexPage() {
             </Helmet>
             {/* Heading section container */}
             <div
-                className="w-full flex items-center bg-index-bg md:bg-cover
+                className="w-full flex items-center
+                    bg-index-bg md:bg-cover
                     h-[250px] md:h-[350px] lg:h-[512px]"
             >
                 {/* Heading text container */}
                 <div
-                    className="font-heading font-bold px-12 py-5 align-centre bg-black/50
-                        text-4xl md:text-6xl lg:text-8xl"
+                    className="font-heading font-bold px-12 py-5 align-centre
+                        backdrop-blur-3xl drop-shadow-lg bg-black/30
+                        text-2xl md:text-4xl lg:text-6xl"
                 >
                     <p>{heading1}</p>
                     <p>{heading2}</p>
