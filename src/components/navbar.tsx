@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 
 function NavBar() {
     // Navbar show/hide styles
-    const navShown = "hidden h-0";
-    const navHidden = "flex h-full";
+    const navShown = "w-0";
+    const navHidden = "w-full";
 
     // Navbar toggle state
     const [navVisibility, setNavVisibility] = React.useState(false);
@@ -28,7 +28,7 @@ function NavBar() {
                 id="menu_ico"
                 xmlns="http://www.w3.org/2000/svg"
                 className="block md:hidden
-                    absolute top-0 md:relative"
+                    absolute top-2 left-2 md:relative"
                 onClick={showNav}
             >
                 <defs id="defs2" />
@@ -56,15 +56,18 @@ function NavBar() {
                 </g>
             </svg>
             <nav
-                className={`gap-x-16 bg-black text-white font-body w-full
+                className={`gap-x-16 bg-black text-white font-body
+                    h-full md:h-16
+                    md:w-auto
+                    pt-2 md:pt-0
                     border-b-0 md:border-b-2 md:border-b-white
                     absolute top-0 z-50 md:relative
-                    pt-2 md:pt-0
-                    flex-col md:flex-row
+                    flex flex-col md:flex-row
                     text-base md:text-lg lg:text-xl
                     font-normal md:font-bold
                     text-justify md:text-center
-                    md:flex md:h-16
+                    overflow-clip
+                    transition-all duration-200
                     ${navVisibility ? navHidden : navShown}`}
             >
                 {/* Mobile menu hide icon svg */}
@@ -75,7 +78,8 @@ function NavBar() {
                     version="1.1"
                     id="menu_ico"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="block md:hidden"
+                    className="block md:hidden
+                    mx-2"
                     onClick={hideNav}
                 >
                     <defs id="defs2" />
