@@ -94,8 +94,7 @@ function NavBar() {
                 </svg>
                 {/* Navigation links */}
                 <Link
-                    className="inline-block mt-3
-                        ml-3 md:ml-9"
+                    className="ml-3 md:ml-9"
                     to="/"
                     activeClassName="text-green-500"
                 >
@@ -104,19 +103,14 @@ function NavBar() {
                         md:hover:text-green-500
                         border-l-4 md:border-b-4 md:border-l-0
                         border-l-green-500 md:border-b-green-500
-                        h-[25px] md:h-[28px] lg:h-[31px]
-                        w-[75px] md:w-[120px] lg:w-[150px]
-                        px-3 md:px-0
-                        my-2 md:my-0
-                        md:hover:h-[33px] lg:hover:h-[35px]
-                        md:hover:text-xl lg:hover:text-2xl"
+                        px-3 md:px-3 md:hover:px-5
+                        my-3 md:pb-0.5"
                     >
                         Home
                     </div>
                 </Link>
                 <Link
-                    className="inline-block mt-3
-                        ml-3 md:ml-auto"
+                    className="ml-3 md:ml-auto"
                     to="/blog"
                     activeClassName="text-blue-500"
                 >
@@ -125,19 +119,14 @@ function NavBar() {
                         md:hover:text-blue-500
                         border-l-4 md:border-b-4 md:border-l-0
                         border-l-blue-500 md:border-b-blue-500
-                        h-[25px] md:h-[28px] lg:h-[31px]
-                        w-[75px] md:w-[120px] lg:w-[150px]
-                        px-3 md:px-0
-                        my-2 md:my-0
-                        md:hover:h-[33px] lg:hover:h-[35px]
-                        md:hover:text-xl lg:hover:text-2xl"
+                        px-3 md:px-3 md:hover:px-5
+                        my-3 md:pb-0.5"
                     >
                         Blog
                     </div>
                 </Link>
                 <Link
-                    className="inline-block mt-3
-                        ml-3 md:ml-0
+                    className="ml-3 md:ml-0
                         mr-0 md:mr-9"
                     to="/portfolio"
                     activeClassName="text-blue-500"
@@ -147,12 +136,8 @@ function NavBar() {
                         md:hover:text-blue-500
                         border-l-4 md:border-b-4 md:border-l-0
                         border-l-blue-500 md:border-b-blue-500
-                        h-[25px] md:h-[28px] lg:h-[31px]
-                        w-[75px] md:w-[120px] lg:w-[150px]
-                        px-3 md:px-0
-                        my-2 md:my-0
-                        md:hover:h-[33px] lg:hover:h-[35px]
-                        md:hover:text-xl lg:hover:text-2xl"
+                        px-3 md:px-3 md:hover:px-5
+                        my-3 md:pb-0.5"
                     >
                         Portfolio
                     </div>
