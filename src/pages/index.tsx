@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import MainLayout from "../components/main_layout";
+import HeaderSection from "../components/header";
 
 const heading1 = "Python | Machine Learning";
 const heading2 = "Full Stack Web | Mobile";
@@ -14,22 +15,7 @@ function IndexPage() {
             <Helmet>
                 <title>Saad Hasib</title>
             </Helmet>
-            {/* Heading section container */}
-            <div
-                className="w-full flex items-center
-                    bg-index-bg md:bg-cover
-                    h-[250px] md:h-[350px] lg:h-[512px]"
-            >
-                {/* Heading text container */}
-                <div
-                    className="font-heading font-bold px-12 py-5 align-centre
-                        backdrop-blur-3xl drop-shadow-lg bg-black/30
-                        text-2xl md:text-4xl lg:text-6xl"
-                >
-                    <p>{heading1}</p>
-                    <p>{heading2}</p>
-                </div>
-            </div>
+            <HeaderSection mainPage="main" text={[heading1, heading2]} />
             {/* About container */}
             <div
                 className="font-body font-medium px-12

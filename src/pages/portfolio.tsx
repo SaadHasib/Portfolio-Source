@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import MainLayout from "../components/main_layout";
+import HeaderSection from "../components/header";
 
 const headerText =
     "Here is a showcase of a selection of projects I have worked on.";
@@ -11,21 +12,7 @@ function PortfolioPage() {
             <Helmet>
                 <title>Saad Hasib | Portfolio</title>
             </Helmet>
-            {/* Heading section container */}
-            <div
-                className="w-full flex items-center
-                    bg-index-bg md:bg-cover
-                    h-[250px] md:h-[350px] lg:h-[512px]"
-            >
-                {/* Heading text container */}
-                <div
-                    className="font-body font-medium px-12 py-5 align-centre
-                        backdrop-blur-3xl drop-shadow-lg bg-black/30
-                        text-xl md:text-2xl lg:text-4xl"
-                >
-                    <p>{headerText}</p>
-                </div>
-            </div>
+            <HeaderSection mainPage="sec" text={headerText} />
             {/* Projects cards section container */}
             <div></div>
         </MainLayout>
