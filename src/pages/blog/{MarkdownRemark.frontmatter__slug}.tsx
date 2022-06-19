@@ -41,8 +41,6 @@ function BlogPost(props: any) {
     );
 }
 
-export default BlogPost;
-
 export const query = graphql`
     query BlogPage($id: String) {
         markdownRemark(id: { eq: $id }) {
@@ -54,3 +52,5 @@ export const query = graphql`
         }
     }
 `;
+
+export default BlogPost;
