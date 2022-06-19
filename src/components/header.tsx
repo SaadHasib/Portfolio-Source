@@ -28,7 +28,8 @@ function HeaderSection(props: headerProps) {
             {/* Heading text container */}
             <div
                 className={`font-heading px-12 py-5 align-centre
-                backdrop-blur-3xl drop-shadow-lg bg-black/30
+                backdrop-blur-xl bg-black/30
+                border-b-2 border-r-2 border-slate-600/30
                 ${props.mainPage === "main" ? mainStyles : secStyles}
                 ${props.mainPage === "blog" ? "font-normal" : " font-bold"}`}
             >
