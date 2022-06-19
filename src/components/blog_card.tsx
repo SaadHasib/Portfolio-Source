@@ -29,7 +29,7 @@ function BlogCard(props: cardProps) {
         >
             {/* Image */}
             <StaticImage
-                src="../../../static/imgs/post_thumbs/post_thumb1.png"
+                src="../../static/imgs/post_thumbs/post_thumb1.png"
                 alt="post thumbnail"
                 className="shrink-0 
                 w-auto h-[100px] object-cover
