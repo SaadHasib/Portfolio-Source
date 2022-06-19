@@ -37,5 +37,12 @@ module.exports = {
                 ],
             },
         },
+        `gatsby-transformer-json`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/user_data/portfolio/`,
+            },
+        },
     ],
 };
