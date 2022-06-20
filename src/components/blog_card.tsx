@@ -20,9 +20,9 @@ function BlogCard(props: cardProps) {
     return (
         <div
             className="bg-black
-            shadow-zinc-900 md:shadow-zinc-900
+            shadow-md
+            shadow-zinc-900
             flex flex-col md:flex-row
-            shadow-md md:shadow-lg
             w-11/12 lg:w-8/12
             min-h-[300px] lg:min-h-[400px]
             "
@@ -42,6 +42,7 @@ function BlogCard(props: cardProps) {
                 items-centre grow
                 w-full"
             >
+                {/* Heading */}
                 <Link
                     key={props.node.id}
                     to={`/blog/${props.node.frontmatter.slug}`}
@@ -57,6 +58,7 @@ function BlogCard(props: cardProps) {
                 >
                     {props.node.frontmatter.title}
                 </Link>
+                {/* Excerpt */}
                 <div
                     className="font-normal
                 text-md md:text-lg
@@ -67,6 +69,7 @@ function BlogCard(props: cardProps) {
                 >
                     {props.node.frontmatter.excerpt}
                 </div>
+                {/* Tags */}
                 <div
                     className="font-normal text-zinc-400
                 text-sm md:text-base
