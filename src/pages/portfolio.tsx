@@ -40,19 +40,15 @@ type portCardData = {
 const headerText =
     "Here is a showcase of a selection of projects I have worked on.";
 
-const headerElement = (
-    <div>
-        <p>{headerText}</p>
-    </div>
-);
-
 function PortfolioPage(props: portIdxProps) {
     return (
         <MainLayout>
             <Helmet>
                 <title>Saad Hasib | Portfolio</title>
             </Helmet>
-            <HeaderSection mainPage="sec">{headerElement}</HeaderSection>
+            <HeaderSection mainPage="sec">
+                <p>{headerText}</p>
+            </HeaderSection>
             {/* Projects cards section container */}
             {props.data.allPortfolioJson.edges.map(
                 (node: portCardData): JSX.Element => (

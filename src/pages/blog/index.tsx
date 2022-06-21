@@ -34,12 +34,6 @@ type postCardData = {
 const headerText =
     "In this blog I share some of the knowledge, which I gathered, while learning new technologies.";
 
-const headerElement = (
-    <div>
-        <p>{headerText}</p>
-    </div>
-);
-
 function BlogHome(props: blogIdxProps) {
     return (
         <MainLayout>
@@ -47,7 +41,9 @@ function BlogHome(props: blogIdxProps) {
                 <title>Saad Hasib | Blog</title>
             </Helmet>
             {/* Heading section container */}
-            <HeaderSection mainPage="sec">{headerElement}</HeaderSection>
+            <HeaderSection mainPage="sec">
+                <p>{headerText}</p>
+            </HeaderSection>
             {/* Blog cards section container */}
             <div
                 className="flex flex-col
