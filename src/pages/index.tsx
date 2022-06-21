@@ -18,14 +18,13 @@ function IndexPage() {
             <HeaderSection mainPage="main" text={[heading1, heading2]} />
             {/* About container */}
             <div
-                className="font-body font-medium px-12
-                    my-12
-                    py-6
+                className="font-body font-medium
                     text-lg md:text-xl lg:text-3xl
-                    bg-black/50"
+                    px-12 py-12 my-12
+                    bg-black"
             >
                 <p>{about1}</p>
-                <br></br>
+                <br />
                 <p>{about2}</p>
             </div>
         </MainLayout>
