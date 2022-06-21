@@ -8,6 +8,7 @@ module.exports = {
         extend: {
             backgroundImage: {
                 "index-bg": "url(/imgs/header/index_bg.png)",
+                "bg-patt": "url(/imgs/bg/bg_patt.png)",
             },
         },
     },
