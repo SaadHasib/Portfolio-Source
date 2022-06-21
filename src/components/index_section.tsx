@@ -1,10 +1,7 @@
 import * as React from "react";
+import { indexSectionProps } from "../types";
 
-type sectionProps = {
-    children: React.ReactNode;
-};
-
-function IndexSection(props: sectionProps) {
+function IndexSection(props: indexSectionProps) {
     return <div className="snap-start h-screen">{props.children}</div>;
 }
 

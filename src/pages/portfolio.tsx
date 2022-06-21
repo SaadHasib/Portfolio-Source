@@ -5,37 +5,7 @@ import MainLayout from "../components/main_layout";
 import HeaderSection from "../components/header";
 import PortfolioCard from "../components/portfolio_card";
 
-type portIdxProps = {
-    data: {
-        allPortfolioJson: {
-            edges: {
-                node: {
-                    id: string;
-                    title: string;
-                    images: {
-                        header: string;
-                        display: string[];
-                    };
-                    description: string;
-                    technologies: string[];
-                };
-            }[];
-        };
-    };
-};
-
-type portCardData = {
-    node: {
-        id: string;
-        title: string;
-        images: {
-            header: string;
-            display: string[];
-        };
-        description: string;
-        technologies: string[];
-    };
-};
+import { portCardData, portIdxProps } from "../types";
 
 const headerText =
     "Here is a showcase of a selection of projects I have worked on.";

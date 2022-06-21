@@ -1,11 +1,8 @@
 import * as React from "react";
+import { mainLayoutProps } from "../types";
 import NavBar from "./navbar";
 
-type MainLayoutProps = {
-    children: React.ReactNode;
-};
-
-function MainLayout(props: MainLayoutProps) {
+function MainLayout(props: mainLayoutProps) {
     return (
         // Container
         <div className="min-h-screen bg-bg-patt text-white">

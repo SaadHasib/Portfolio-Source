@@ -2,21 +2,9 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
-type postCardData = {
-    frontmatter: {
-        title: string;
-        slug: string;
-        excerpt: string;
-        tags: string;
-    };
-    id: string;
-};
+import { blogCardProps } from "../types";
 
-type cardProps = {
-    node: postCardData;
-};
-
-function BlogCard(props: cardProps) {
+function BlogCard(props: blogCardProps) {
     return (
         <div
             className="bg-black

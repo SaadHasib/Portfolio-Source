@@ -23,25 +23,26 @@ function IndexPage() {
                 {/* Header and About */}
                 <IndexSection>
                     <HeaderSection mainPage="main">
-                        <p>{heading1}</p>
-                        <p>{heading2}</p>
+                        <h2>{heading1}</h2>
+                        <h2>{heading2}</h2>
                     </HeaderSection>
                     <TextSection>
-                        <p>{about1}</p>
+                        <h3>About Me</h3>
                         <br />
+                        <p>{about1}</p>
                         <p>{about2}</p>
                     </TextSection>
                 </IndexSection>
                 {/* Skills */}
                 <IndexSection>
                     <TextSection>
-                        <p>Skills</p>
+                        <h3>Skills</h3>
                     </TextSection>
                 </IndexSection>
                 {/* Portfolio */}
                 <IndexSection>
                     <TextSection>
-                        <p>Portfolio</p>
+                        <h3>Portfolio</h3>
                     </TextSection>
                 </IndexSection>
             </div>

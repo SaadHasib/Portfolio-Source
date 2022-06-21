@@ -1,10 +1,7 @@
 import * as React from "react";
+import { textSectionProps } from "../types";
 
-type sectionProps = {
-    children: React.ReactNode;
-};
-
-function MainSection(props: sectionProps) {
+function MainSection(props: textSectionProps) {
     return (
         <div
             className="font-body font-medium

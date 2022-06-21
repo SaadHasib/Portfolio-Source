@@ -5,31 +5,7 @@ import MainLayout from "../../components/main_layout";
 import HeaderSection from "../../components/header";
 import BlogCard from "../../components/blog_card";
 
-type blogIdxProps = {
-    data: {
-        allMarkdownRemark: {
-            nodes: {
-                frontmatter: {
-                    title: string;
-                    slug: string;
-                    excerpt: string;
-                    tags: string;
-                };
-                id: string;
-            }[];
-        };
-    };
-};
-
-type postCardData = {
-    frontmatter: {
-        title: string;
-        slug: string;
-        excerpt: string;
-        tags: string;
-    };
-    id: string;
-};
+import { blogPostCardData, blogIdxProps } from "../../types";
 
 const headerText =
     "In this blog I share some of the knowledge, which I gathered, while learning new technologies.";
@@ -55,7 +31,7 @@ function BlogHome(props: blogIdxProps) {
             >
                 {/* Blog card */}
                 {props.data.allMarkdownRemark.nodes.map(
-                    (node: postCardData): JSX.Element => (
+                    (node: blogPostCardData): JSX.Element => (
                         <BlogCard node={node} />
                     )
                 )}

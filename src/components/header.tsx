@@ -1,9 +1,5 @@
 import * as React from "react";
-
-type headerProps = {
-    mainPage: "main" | "sec" | "blog";
-    children: React.ReactNode;
-};
+import { headerProps } from "../types";
 
 function HeaderSection(props: headerProps) {
     // Font sizes for main/secondary sections
