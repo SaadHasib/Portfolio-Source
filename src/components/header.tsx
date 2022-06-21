@@ -2,20 +2,10 @@ import * as React from "react";
 
 type headerProps = {
     mainPage: "main" | "sec" | "blog";
-    text: string | string[];
+    children: React.ReactNode;
 };
 
 function HeaderSection(props: headerProps) {
-    // Function to handle single or multiple header lines
-    function headingText(text: string | string[]): JSX.Element | JSX.Element[] {
-        if (typeof text === "string") {
-            return <p>{text}</p>;
-        } else {
-            return text.map((txt) => {
-                return <p>{txt}</p>;
-            });
-        }
-    }
     // Font sizes for main/secondary sections
     const mainStyles = "text-2xl md:text-4xl lg:text-6xl";
     const secStyles = "text-xl md:text-2xl lg:text-4xl";
@@ -33,7 +23,7 @@ function HeaderSection(props: headerProps) {
                 ${props.mainPage === "main" ? mainStyles : secStyles}
                 ${props.mainPage === "blog" ? "font-normal" : " font-bold"}`}
             >
-                {headingText(props.text)}
+                {props.children}
             </div>
         </div>
     );
