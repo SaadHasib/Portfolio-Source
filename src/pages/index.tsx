@@ -2,7 +2,7 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import MainLayout from "../components/main_layout";
 import HeaderSection from "../components/header";
-import MainSection from "../components/main_sections";
+import TextSection from "../components/text_section";
 
 const heading1 = "Python | Machine Learning";
 const heading2 = "Full Stack Web | Mobile";
@@ -22,11 +22,11 @@ function IndexPage() {
                 <p>{heading2}</p>
             </HeaderSection>
             {/* About container */}
-            <MainSection>
+            <TextSection>
                 <p>{about1}</p>
                 <br />
                 <p>{about2}</p>
-            </MainSection>
+            </TextSection>
         </MainLayout>
     );
 }
