@@ -9,13 +9,20 @@ const about1 =
     "Primarily a Python developer, working in the fields of machine learning and data science. Well versed in Javascript and the MERN stack to provide full stack solutions.";
 const about2 = "Also a hobbyist 2D/3D graphic designer.";
 
+const headerElement = (
+    <div>
+        <p>{heading1}</p>
+        <p>{heading2}</p>
+    </div>
+);
+
 function IndexPage() {
     return (
         <MainLayout>
             <Helmet>
                 <title>Saad Hasib</title>
             </Helmet>
-            <HeaderSection mainPage="main" text={[heading1, heading2]} />
+            <HeaderSection mainPage="main">{headerElement}</HeaderSection>
             {/* About container */}
             <div
                 className="font-body font-medium
