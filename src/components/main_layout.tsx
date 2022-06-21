@@ -8,8 +8,8 @@ type MainLayoutProps = {
 function MainLayout(props: MainLayoutProps) {
     return (
         // Container
-        <div className="min-h-screen bg-gradient-to-br from-slate-900 to-black">
-            <NavBar />
+        <div className="min-h-screen bg-bg-patt">
+            {/* <NavBar /> */}
             {/* Page component */}
             <div className="text-white">{props.children}</div>
         </div>
